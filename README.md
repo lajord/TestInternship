@@ -1,0 +1,1 @@
+=> Installer les librarie associer -> Utiliser google collab si pas de GPU nvdia 
