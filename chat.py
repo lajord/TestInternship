@@ -1,6 +1,6 @@
 import ollama
 import chromadb
-import time
+
 
 # Connect to ChromaDB
 chroma_client = chromadb.PersistentClient(path="./chroma_db")
@@ -80,14 +80,10 @@ if __name__ == "__main__":
         prompt=intro_prompt
     )
     print("Bot:", intro_response.get("response", "Hello, I am your assistant!"), "\n")
-    
     while True:
         user_query = input("Ask a question (or type 'exit' to quit): ")
         if user_query.lower() == 'exit':
             break
-        
-        print("Processing your request, please wait...\n")
-        time.sleep(1)  # Simulate a short delay for better user experience
-        
+        print("Processing your request, please wait...\n")  
         answer = generate_answer(user_query)
         print("Response:", answer, "\n")

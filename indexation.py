@@ -42,58 +42,6 @@ def process_directory(directory):
         if filename.endswith(".json") or filename.endswith(".txt"):
             index_with_deepseek_chroma(filepath)
 
-def generate_answer(query):
-    """Recherche des documents avec DeepSeek dans ChromaDB et génère une réponse avec Ollama."""
-    
-    # 1. Obtenir l'embedding de la question avec DeepSeek
-    query_embedding = get_embedding(query)
 
-    # 2. Interroger ChromaDB pour récupérer les documents les plus pertinents
-    search_results = collection.query(
-        query_embeddings=[query_embedding],
-        n_results=3  
-    )
 
-    # 3. Construire un contexte avec les résultats trouvés
-    top_items = search_results["metadatas"][0] if search_results["metadatas"] else []
-    context_parts = []
-    
-    for item in top_items:
-        content = item.get("content", "")
-        answer = item.get("answer", "")
-
-        if answer:
-            context_parts.append(f"Q: {content}\nA: {answer}")
-        else:
-            context_parts.append(f"Extrait: {content}")
-
-    context_text = "\n\n".join(context_parts)
-
-    # 4. Construire le prompt à envoyer à Ollama
-    prompt = f"""
-Voici des informations extraites de la FAQ et des documents :
-
-{context_text}
-
-En te basant sur ces informations, réponds à la question suivante de manière concise et claire :
-
-Question utilisateur : {query}
-Réponse :
-    """
-
-    # 5. Générer une réponse avec Ollama fine-tuné
-    response = ollama.generate(
-        model="model_finetune_3",
-        prompt=prompt
-    )
-
-    return response.get("response", "Désolé, je n'ai pas trouvé d'information.")
-
-if __name__ == "__main__":
-    # Indexer les documents du dossier (exemple)
-    # process_directory(r"H:\TestStage\DocumentIndexation")
-
-    # Tester une requête utilisateur
-    user_query = "Fait un top 10 jeux vidéox"
-    answer = generate_answer(user_query)
-    print("Réponse du modèle :", answer)
+process_directory("./DocumentIndexation")
