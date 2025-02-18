@@ -1,0 +1,15 @@
+---
+User Manual for Online Banking Services
+---
+
+1. Account Creation
+To create an account, visit our website and click on "Open an Account." Follow the instructions and provide the necessary documents, such as a valid ID and proof of address.
+
+2. Managing Bank Cards
+You can manage your bank cards through your online account. Activate, block, or replace your cards with just a few clicks. For added security, set up transaction alerts.
+
+3. Transfers and Payments
+To make a transfer, go to the "Transfers" section of your account. You can also schedule recurring payments. For international transfers, you will need the beneficiary's bank details.
+
+4. Support and Security
+If you encounter any issues, contact our customer service. To enhance your account security, enable two-factor authentication. Regularly update your contact information to ensure you receive important notifications.

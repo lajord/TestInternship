@@ -1,0 +1,42 @@
+[
+    {
+        "question": "How do I open a bank account?",
+        "answer": "To open a bank account, visit our website and follow the instructions in the 'Open an Account' section. You will need a valid ID and proof of address."
+    },
+    {
+        "question": "How can I reset my password?",
+        "answer": "To reset your password, click on 'Forgot Password' on the login page. You will receive a link via email to create a new password."
+    },
+    {
+        "question": "How do I apply for a loan?",
+        "answer": "Log in to your account and go to the 'Loans' section. Fill out the loan application form and submit it. We will contact you for further steps."
+    },
+    {
+        "question": "What are the bank fees?",
+        "answer": "Bank fees vary depending on the services used. Please refer to our fee schedule available on our website for detailed information."
+    },
+    {
+        "question": "How do I activate my bank card?",
+        "answer": "To activate your bank card, call the number on the back of the card or use our mobile app."
+    },
+    {
+        "question": "How can I check my account balance?",
+        "answer": "You can check your account balance by logging in to your online account or via our mobile app."
+    },
+    {
+        "question": "How do I report a lost or stolen card?",
+        "answer": "If your card is lost or stolen, contact our customer service immediately to report it and request a replacement."
+    },
+    {
+        "question": "How do I make a transfer?",
+        "answer": "Log in to your account, go to 'Transfers', and follow the instructions to make a transfer."
+    },
+    {
+        "question": "How can I get an account statement?",
+        "answer": "Your account statements are available online in the 'Statements' section. You can also request to receive them by mail."
+    },
+    {
+        "question": "How do I contact customer service?",
+        "answer": "You can contact our customer service by phone, email, or through the live chat available on our website."
+    }
+]
